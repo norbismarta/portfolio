@@ -40,7 +40,7 @@ body {
     margin: 10px 0 20px;
   }
   
-  .cta-button {
+  #cta-button {
     padding: 10px 20px;
     background: #304055;
     color: #cad8e4;
@@ -48,7 +48,7 @@ body {
     border-radius: 20px;
   }
   
-  .cta-button:hover {
+  #cta-button:hover {
     background: #5d7e87;
   }
   
@@ -101,11 +101,11 @@ body {
   margin-bottom: 10px;
 }
 
-.cta-button {
+#cta-button {
   background: #5d7e87;
   color: #f3eeea;
 }
-.cta-button:hover {
+#cta-button:hover {
   background: #f3eeea;
   color: #5d7e87;
 }
