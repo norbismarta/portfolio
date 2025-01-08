@@ -5,12 +5,16 @@
 }
 
 body {
-  font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+  font-family: soleil, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   line-height: 2.5;
   color: #304055;
   background-color: #cad8e4;
-
+  padding: 0;
+  margin: 0;
 }/* Main Section */
+
 #navbar {
     color: #304055;
     background-color: #cad8e4;
@@ -58,10 +62,6 @@ body {
     text-align: center;
   }
   
-  #portfolio h2 {
-    margin-bottom: 20px;
-    font-size: 2rem;
-  }
   .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -70,18 +70,13 @@ body {
   
   .portfolio-item {
     background: #f3eeea;
-    padding: 10px;
+    padding: 20px;
     border-radius: 20px;
     transition: transform 0.3s;
   }
   .portfolio-item img {
     width: 100%;
-    border-radius: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .portfolio-item h3 {
-    font-size: 1.2rem;
+    border-radius: 10px;
   }
   
   .portfolio-item:hover {
