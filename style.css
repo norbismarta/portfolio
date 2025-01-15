@@ -4,17 +4,17 @@
 }
 
 body {
-  font-family: noto sans, sans-serif;
+  font-family: futura;
   line-height: 1.5;
   color: #304055;
-  background-color: #cad8e4;
+  background-color: #ffffff;
   padding: 0;
   margin: 0;
 }/* Main Section */
 
 #navbar {
     color: #304055;
-    background-color: #cad8e4;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     padding-top: 20px;
