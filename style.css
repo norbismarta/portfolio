@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: bebas neue;
+  font-family: noto sans, sans-serif;
   line-height: 1.5;
   color: #304055;
   background-color: #cad8e4;
@@ -47,7 +47,7 @@ body {
 #cta-button {
     padding: 10px 20px;
     background: #304055;
-    color: #cad8e4;
+    color: #ffffff;
     text-decoration: none;
     border-radius: 20px;
   }
@@ -95,6 +95,9 @@ body {
 }
 
 .cta-button1 {
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 20px;
   background: #5d7e87;
   color: #f3eeea;
 }
