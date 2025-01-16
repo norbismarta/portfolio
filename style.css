@@ -4,16 +4,18 @@
 }
 
 body {
-  font-family: futura;
+  font-family: Helvetica, sans-serif;
   line-height: 1.5;
   color: #304055;
   background-color: #ffffff;
   padding: 0;
   margin: 0;
-}/* Main Section */
+}
 
+/* Main Section */
 #navbar {
     color: #304055;
+    font-weight: 900;
     background-color: #ffffff;
     display: flex;
     justify-content: center;
@@ -22,7 +24,6 @@ body {
     pointer-events: none;
     position: fixed;
     width: 100%;
-    z-index: 0;
 }
 
 #header {
@@ -30,13 +31,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #304055;
     text-align: center;
+    color: #304055;
   }
   
 .header h1 {
     font-size: 5rem;
     margin-bottom: 20px;
+    font-weight: calc(900 + 900);
     }
 
 .header p {
@@ -57,27 +59,35 @@ body {
   }
   
   /* Portfolio Section */
-#portfolio {
-    padding: 50px 50px;
-    text-align: center;
+  #portfolio {
+  height: auto;
   }
-  
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 100px;
+
+  :root {
+    --portfolio: 200px;
+    --spacer: 30px;
   }
-  
-.portfolio-item {
-    border-radius: 20px;
-    transition: transform 0.5s;
+  .container, .container-fluid {
+    min-height: 100px;
   }
-.portfolio-item img {
-    width: 100%;
-    border-radius: 10px;
+
+  #container {
+    height: var(--portfolio);
   }
-  
-.portfolio-item:hover {
+  #container {
+    height: calc(100vh - var(--portfolio));
+  }
+
+  #portfolio [class*="col-"] {
+    margin-bottom: calc(var(--spacer) * 1);
+  }
+
+  #portfolio img {
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+  }
+
+  #portfolio img:hover {
     transform: scale(1.05);
   }
 
@@ -90,12 +100,18 @@ body {
 }
 
 #contact h2 {
-  font-size: 5rem;
-  margin-bottom: 10px;
+  font-size: 4rem;
+  margin: 20px;
+}
+
+#contact p {
+  font-size: 1rem;
+  margin: 20px;
 }
 
 .cta-button1 {
   padding: 10px 20px;
+  margin: 20px;
   text-decoration: none;
   border-radius: 20px;
   background: #5d7e87;
@@ -113,12 +129,17 @@ footer {
   background: #5d7e87;
   color: #f3eeea;
 }
-a
+
+footer p {
+  margin: 40px;
+}
+
 .social-links {
   color: #f3eeea;
-  margin: 0 10px;
+  margin: 20px;
   text-decoration: none;
   transition: color 0.3s;
+  margin: auto;
 }
 
 .social-links:hover {
