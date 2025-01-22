@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM completamente caricato!');
+
+
 const buttonclick = () => {
     console.log('Button clicked');
 }
@@ -16,3 +20,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+});
