@@ -1,4 +1,4 @@
-/* Variabili Globali */
+/* variables */
 :root {
   --primary-color: #304055;
   --secondary-color: #5d7e87;
@@ -13,20 +13,17 @@
   --box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.08);
 }
 
-* {
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
   font-family: var(--font-family);
   line-height: 3;
   color: var(--primary-color);
   background-color: var(--background-color);
 }
 
-/* Navbar */
+/* navbar */
 #navbar {
   color: var(--primary-color);
   font-weight: 900;
@@ -40,7 +37,7 @@ body {
   z-index: 1000;
 }
 
-/* Header */
+/* header */
 #header {
   height: 100vh;
   display: flex;
@@ -76,45 +73,38 @@ body {
   background: var(--secondary-color);
 }
 
-/* Carousel */
-#slideshow-container {
-  overflow: hidden;
-  width: 100%;
-  height: 400px;
-  background-color: #f8f9fa;
-  position: relative;
+/* Swiper Base */
+.swiper-container {
+  width: 80%;
+  margin: 0 auto;
 }
 
-.slideshow {
+.swiper-slide {
   display: flex;
-  gap: var(--spacer);
-  animation: scroll-loop 10s linear infinite;
+  justify-content: center;
+  align-items: center;
 }
-
-.slideshow img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
+.swiper-slide img {
+  width: 100%;
+  gap: var(--spacer);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   transition: transform 0.3s ease-in-out;
 }
 
-.slideshow img:hover {
+.swiper-slide img:hover {
   transform: scale(1.05);
 }
 
-@keyframes scroll-loop {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Portfolio */
+/* portfolio */
 #portfolio {
+  margin-top: calc(var(--spacer) * 2);
   padding: var(--spacer) calc(var(--spacer) * 4);
   background-color: var(--background-color);
 }
@@ -143,8 +133,9 @@ body {
   transform: scale(1.05);
 }
 
-/* Call to Action */
+/* call to action */
 #contact {
+  margin-top: calc(var(--spacer) * 4);
   padding: calc(var(--spacer) * 2);
   text-align: center;
   background: var(--primary-color);
@@ -175,7 +166,7 @@ body {
   color: var(--secondary-color);
 }
 
-/* Footer */
+/* footer */
 footer {
   padding: calc(var(--spacer) * 2);
   text-align: center;
