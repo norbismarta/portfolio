@@ -40,11 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         spaceBetween: 30, 
         grabCursor: true, 
         loop: true,
-        centeredSlides: true, 
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true
-        }
+        centeredSlides: true,
     });
   
     const lightbox = document.getElementById('lightbox-modal');
